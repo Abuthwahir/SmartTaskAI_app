@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:id="@+id/cal_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/buttonPrevMonth"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/prev_month"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/textMonthYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Month Year"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/buttonNextMonth"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_media_next"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/next_month"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <!-- ✅ FIXED: DAY HEADERS -->
+    <LinearLayout
+        android:id="@+id/layoutDayHeaders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <TextView style="@style/DayStyle" android:layout_weight="1" android:text="Sun"/>
+        <TextView style="@style/DayStyle" android:layout_weight="1" android:text="Mon"/>
+        <TextView style="@style/DayStyle" android:layout_weight="1" android:text="Tue"/>
+        <TextView style="@style/DayStyle" android:layout_weight="1" android:text="Wed"/>
+        <TextView style="@style/DayStyle" android:layout_weight="1" android:text="Thu"/>
+        <TextView style="@style/DayStyle" android:layout_weight="1" android:text="Fri"/>
+        <TextView style="@style/DayStyle" android:layout_weight="1" android:text="Sat"/>
+
+    </LinearLayout>
+
+    <!-- CALENDAR -->
+    <com.kizitonwose.calendar.view.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cv_dayViewResource="@layout/item_calendar_day" />
+
+    <!-- SELECTED DATE -->
+    <TextView
+        android:id="@+id/textSelectedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:padding="12dp"
+        android:textStyle="bold"/>
+
+    <!-- TASK LIST -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDayTasks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- ✅ FIXED: NO TASKS TEXT -->
+    <TextView
+        android:id="@+id/textNoTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No tasks for this day"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="8dp"/>
+
+    <!-- ✅ FIXED: FAB BUTTON -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddTaskForDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"/>
+
+</LinearLayout>

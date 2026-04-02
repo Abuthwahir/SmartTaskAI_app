@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Primary brand colors -->
+    <color name="primary">#3B82F6</color>
+    <color name="primary_dark">#1D4ED8</color>
+    <color name="primary_light">#60A5FA</color>
+    <color name="primary_container">#EFF6FF</color>
+    <color name="on_primary">#FFFFFF</color>
+
+    <!-- Secondary -->
+    <color name="secondary">#8B5CF6</color>
+    <color name="secondary_container">#F5F3FF</color>
+
+    <!-- Status colors -->
+    <color name="success">#22C55E</color>
+    <color name="success_bg">#DCFCE7</color>
+    <color name="error">#EF4444</color>
+    <color name="error_bg">#FEE2E2</color>
+    <color name="warning">#F59E0B</color>
+    <color name="warning_bg">#FEF3C7</color>
+
+    <!-- Priority colors -->
+    <color name="priority_high">#EF4444</color>
+    <color name="priority_high_bg">#FEE2E2</color>
+    <color name="priority_medium">#F59E0B</color>
+    <color name="priority_medium_bg">#FEF3C7</color>
+    <color name="priority_low">#22C55E</color>
+    <color name="priority_low_bg">#DCFCE7</color>
+
+    <!-- Dark theme backgrounds -->
+    <color name="dark_background">#0A0E1A</color>
+    <color name="dark_surface">#131829</color>
+    <color name="dark_surface_variant">#1A2035</color>
+    <color name="dark_card">#151B2E</color>
+    <color name="dark_on_background">#F1F5F9</color>
+    <color name="dark_on_surface">#E2E8F0</color>
+    <color name="dark_on_surface_variant">#94A3B8</color>
+    <color name="dark_outline">#334155</color>
+    <color name="dark_outline_variant">#1E293B</color>
+
+    <!-- Light theme backgrounds -->
+    <color name="light_background">#F8FAFC</color>
+    <color name="light_surface">#FFFFFF</color>
+    <color name="light_surface_variant">#F1F5F9</color>
+    <color name="light_card">#FFFFFF</color>
+    <color name="light_on_background">#0F172A</color>
+    <color name="light_on_surface">#1E293B</color>
+    <color name="light_on_surface_variant">#475569</color>
+    <color name="light_outline">#CBD5E1</color>
+    <color name="light_outline_variant">#E2E8F0</color>
+
+    <!-- Alarm screen -->
+    <color name="alarm_background">#0A0E1A</color>
+    <color name="alarm_text_primary">#F1F5F9</color>
+    <color name="alarm_text_secondary">#94A3B8</color>
+    <color name="alarm_card_bg">#151B2E</color>
+    <color name="snooze_btn_bg">#3B82F6</color>
+    <color name="dismiss_btn_bg">#EF4444</color>
+
+    <!-- AI section -->
+    <color name="ai_section_bg">#080E24</color>
+    <color name="ai_section_border">#1E3A8A</color>
+    <color name="ai_avatar_bg">#EFF6FF</color>
+
+    <!-- Semantic aliases -->
+    <color name="text_primary">#F1F5F9</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_muted">#64748B</color>
+
+    <!-- Launcher icon background -->
+    <color name="ic_launcher_background">#0A0E1A</color>
+
+</resources>

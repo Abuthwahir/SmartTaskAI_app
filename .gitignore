@@ -1,0 +1,77 @@
+# =========================
+# ANDROID / GRADLE
+# =========================
+.gradle/
+build/
+**/build/
+local.properties
+
+# =========================
+# IDE (Android Studio / IntelliJ)
+# =========================
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# =========================
+# OS FILES
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# LOGS
+# =========================
+*.log
+
+# =========================
+# APK / AAB
+# =========================
+*.apk
+*.aab
+
+# =========================
+# KEYSTORE (IMPORTANT)
+# =========================
+*.keystore
+*.jks
+!smarttask-release.keystore.example
+
+# =========================
+# NDK / C++
+# =========================
+.externalNativeBuild/
+.cxx/
+
+# =========================
+# GENERATED FILES
+# =========================
+captures/
+generated/
+out/
+*.class
+*.kotlin_module
+
+# =========================
+# ENV FILES
+# =========================
+*.env
+
+# =========================
+# FIREBASE / GOOGLE (optional)
+# =========================
+google-services.json
+fabric.properties
+
+# =========================
+# VS CODE
+# =========================
+.vscode/
+
+# =========================
+# TEMP FILES
+# =========================
+*.tmp
+*.temp
+*.lock

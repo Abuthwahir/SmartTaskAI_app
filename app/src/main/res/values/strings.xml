@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartTask AI</string>
+
+    <!-- Navigation -->
+    <string name="nav_tasks">Tasks</string>
+    <string name="nav_calendar">Calendar</string>
+    <string name="nav_assistant">AI Assistant</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Tasks -->
+    <string name="todays_tasks">Today\'s Tasks</string>
+    <string name="add_task">Add Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="save_task">Save Task</string>
+    <string name="update_task">Update Task</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="task_title_hint">Task title</string>
+    <string name="task_description_hint">Optional description</string>
+    <string name="no_tasks">No tasks yet</string>
+    <string name="add_first_task">Tap + to add your first task</string>
+
+    <!-- AI -->
+    <string name="ai_quick_add">AI Quick Add</string>
+    <string name="ai_input_hint">e.g. "Meeting with team tomorrow at 3 PM"</string>
+    <string name="ai_assistant_greeting">Hello! How can I assist you today?</string>
+    <string name="ai_thinking">AI is thinking…</string>
+    <string name="ai_task_created">✅ Task created automatically</string>
+    <string name="ask_me_anything">Ask me anything…</string>
+
+    <!-- Alarm -->
+    <string name="snooze">Snooze</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="mark_done">✓ Mark as Done</string>
+    <string name="time_to_complete">Time to complete your task!</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="notification_sounds">Notification Sounds</string>
+    <string name="enable_ai">Enable AI Features</string>
+    <string name="gemini_api_key">Gemini API Key</string>
+    <string name="save_api_key">Save API Key</string>
+    <string name="ai_re_prioritize">✨ AI Re-Prioritize All Tasks</string>
+    <string name="app_version">SmartTask AI v1.0.0 · Powered by Gemini</string>
+
+    <!-- Errors -->
+    <string name="error_no_title">Title is required</string>
+    <string name="error_ai_failed">AI parsing failed. Check your API key in Settings.</string>
+    <string name="error_network">Connection failed. Check your internet.</string>
+
+    <!-- Notifications -->
+    <string name="notification_done">Done</string>
+    <string name="notification_snooze">Snooze 10m</string>
+    <string name="channel_reminders_name">Task Reminders</string>
+    <string name="channel_alarms_name">Task Alarms</string>
+
+    <string name="prev_month">Previous Month</string>
+    <string name="next_month">Next Month</string>
+    <string name="month_year">March 2026</string>
+    <string name="select_date">Select Date</string>
+
+    <string name="sun">Sun</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+</resources>

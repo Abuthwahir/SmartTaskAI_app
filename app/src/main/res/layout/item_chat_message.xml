@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp">
+
+    <!-- User message (right-aligned) -->
+    <LinearLayout
+        android:id="@+id/layoutUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="64dp"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/textMessageUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="?attr/colorOnSurface"
+                android:padding="12dp"
+                android:maxWidth="280dp"
+                android:background="@drawable/bg_chat_user"
+                tools:text="Remind me to take medicine at 8 AM every day" />
+
+            <TextView
+                android:id="@+id/textTimestampUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:paddingTop="2dp"
+                tools:text="8:00 AM" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- AI assistant message (left-aligned) -->
+    <LinearLayout
+        android:id="@+id/layoutAssistant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@color/ai_avatar_bg"
+            app:cardElevation="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="4dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_sparkles"
+                android:padding="8dp"
+                android:tint="?attr/colorPrimary" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="64dp">
+
+            <TextView
+                android:id="@+id/textMessageAi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="?attr/colorOnSurface"
+                android:padding="12dp"
+                android:maxWidth="280dp"
+                android:background="@drawable/bg_chat_assistant"
+                tools:text="Got it! I'll remind you to take your medicine every day at 8:00 AM." />
+
+            <!-- Task-created badge: shown when this message auto-created a task -->
+            <LinearLayout
+                android:id="@+id/badgeTaskCreated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp"
+                android:background="@drawable/bg_task_created_badge"
+                android:layout_marginTop="4dp"
+                android:visibility="gone">
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_check"
+                    android:tint="@color/success" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task created automatically"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/success"
+                    android:layout_marginStart="6dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textTimestampAi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:paddingTop="2dp"
+                tools:text="8:01 AM" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
