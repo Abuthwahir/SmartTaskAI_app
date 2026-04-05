@@ -347,7 +347,7 @@ MIT License — Owner **Abuthwahir**
 <div align="center">
 
 **SmartTask AI** — Built with ❤️ using Kotlin, Jetpack, Material 3, and Gemini AI
-* Built by Abuthwahir H M *
+*Built by Abuthwahir H M*
 *Manage smarter. Achieve more.*
 
 </div>
