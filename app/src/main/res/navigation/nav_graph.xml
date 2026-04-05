@@ -58,17 +58,15 @@
         android:label="Add / Edit Task"
         tools:layout="@layout/fragment_add_edit_task">
 
-        <!-- FIXED: long should NOT use L -->
         <argument
             android:name="taskId"
             app:argType="long"
-            android:defaultValue="0L" />
+            android:defaultValue="0" />
 
-        <!-- FIXED: avoid empty string -->
         <argument
             android:name="date"
             app:argType="string"
-            android:defaultValue="none" />
+            android:defaultValue="" />
 
     </fragment>
 

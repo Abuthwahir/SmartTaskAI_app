@@ -52,8 +52,8 @@ class AddEditTaskFragment : Fragment() {
     // Shared ViewModel — scoped to the NavGraph / Activity
     private val viewModel: TaskViewModel by viewModels()
 
-    // -1L means "add mode"; any positive value means "edit mode"
-    private var taskId: Long = -1L
+    // 0L means "add mode"; any positive value means "edit mode"
+    private var taskId: Long = 0L
     private var existingTask: TaskEntity? = null
 
     // Form state — kept in fragment (not ViewModel) because it's purely transient UI state
@@ -103,7 +103,7 @@ class AddEditTaskFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Read taskId from fragment arguments (set by nav_graph <argument>)
-        taskId = arguments?.getLong("taskId", -1L) ?: -1L
+        taskId = arguments?.getLong("taskId", 0L) ?: 0L
 
         setupPriorityChips()
         setupCategoryChips()
@@ -114,7 +114,7 @@ class AddEditTaskFragment : Fragment() {
         setupSaveButton()
         observeViewModel()
 
-        if (taskId != -1L) {
+        if (taskId > 0L) {
             // Edit mode — load existing task from DB
             loadExistingTask()
             binding.textViewHeader.text = "Edit Task"
